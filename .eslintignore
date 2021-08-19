@@ -1,0 +1,11 @@
+package.json
+package-lock.json
+.cache/
+.eslintrc.json
+.prettierrc.json
+.vscode
+build
+docs
+node_modules
+tsconfig.json
+coverage
