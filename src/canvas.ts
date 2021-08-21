@@ -1,7 +1,7 @@
 /**
- * Main Process Function.
+ * Main Process function.
  *
- * SVG to ICO Generate.
+ * From SVG file to create ICO file containg PNG images.
  *
  * Copyright (c) 2021.
  * Kenichi Inoue.
@@ -28,7 +28,7 @@ const makeDirectory = (): string => {
 };
 
 const definePngFileProperty = (input: string, directory: string) => {
-  const pixels = [32, 16, 48, 128];
+  const pixels = [16, 32, 48, 128];
   const pngNames = pixels.map((pixel) => join(directory, `ico-${pixel}x${pixel}.png`));
   const pngFiles = pngNames.map((name, index) => ({
     sourceSVGFilePath: input,
@@ -48,13 +48,13 @@ const createPngFile = async (
 ) => {
   const createFiles = [];
   // TODO Heavy Loop ...
-  // Ref https://eslint.org/docs/rules/no-restricted-syntax
+  // Reference : https://eslint.org/docs/rules/no-restricted-syntax
   // eslint-disable-next-line no-restricted-syntax
   for (const file of definePngFiles) {
     createFiles.push(
       sharp(file.sourceSVGFilePath)
         .resize({ width: file.size, height: file.size })
-        .png()
+        .png({quality: 100})
         .toFile(file.outputFilePath)
         .catch((error) => error),
     );
@@ -79,7 +79,7 @@ const packingIco = async (
 };
 
 /**
- * Convert SVG to ICO.
+ * Convert SVG File to ICO File.
  *
  * @param inputSVGPath input SVG File Path.
  */

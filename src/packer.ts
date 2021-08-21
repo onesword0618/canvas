@@ -1,7 +1,7 @@
 /**
  * Domain Process function.
  *
- * PNG Image Files to ICO File Buffer.
+ * PNG images to create ICO file Buffer.
  *
  * Copyright (c) 2021.
  * Kenichi Inoue.
@@ -24,10 +24,6 @@ const iconDirHeader = (buffers: Buffer[]) => {
 const arrayLength = (callbackNumber: number, buffer: Buffer): number => callbackNumber + buffer.length;
 
 function iconDirEntry(bufferMemory: Buffer, index: number, buffers: Buffer[]) {
-  if (!Buffer.isBuffer(bufferMemory)) {
-    throw new Error(`Images must be Buffers : ${bufferMemory}`);
-  }
-
   if (!bufferMemory.slice(0, 8).equals(png.header)) {
     const currentMemory = bufferMemory.slice(0, 8);
     throw new Error(`Images must be in PNG format : ${currentMemory}`);
@@ -38,7 +34,7 @@ function iconDirEntry(bufferMemory: Buffer, index: number, buffers: Buffer[]) {
   const [width, height, colorType] = ihdr(bufferMemory);
 
   if (width !== height) {
-    throw new Error(`Images must be square. this image size : witdth ${width} height ${height}`);
+    throw new Error(`Images must be square. this image size [ witdth: ${width} , height: ${height} ]`);
   }
 
   if (width > 256) {
@@ -70,7 +66,7 @@ function iconDirEntry(bufferMemory: Buffer, index: number, buffers: Buffer[]) {
 const iconInfoHeader = (buffers: Buffer[]) => [iconDirHeader(buffers), ...buffers.map(iconDirEntry)];
 
 /**
- * Convert Input Png Image File Buffer to ICO File Buffer
+ * Convert Png images Buffer to ICO File Buffer.
  *
  * @param buffers png Image File Buffers
  * @returns ico File Buffer
