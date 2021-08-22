@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: ci test
+      - name: ci
         run: npm ci
       - name: build
-        run: npm run build --if-present
+        run: npm run build
       - name: test
-        run: npm test
+        run: npm run test
