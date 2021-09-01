@@ -12,15 +12,14 @@ Convert SVG Format File to ICO Format File.
 ![GitHub top language](https://img.shields.io/github/languages/top/onesword0618/canvas?style=plastic)
 ![GitHub language count](https://img.shields.io/github/languages/count/onesword0618/canvas?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/onesword0618/canvas?style=plastic)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/onesword0618/canvas?style=plastic)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/onesword0618/canvas?style=plastic) 
-![GitHub forks](https://img.shields.io/github/forks/onesword0618/canvas.svg)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=plastic)](https://github.com/prettier/prettier)
-[![code checker: eslint](https://img.shields.io/badge/checker-eslint-blue?style=plastic)](https://github.com/eslint/eslint)
-[![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest?style=plastic)
-![typeScript](https://img.shields.io/badge/TypeScript-007ACC?style=plastic&logo=typescript&logoColor=white)
-![nodejs](https://img.shields.io/badge/Node.js-43853D?style=plastic&logo=node.js&logoColor=white)
- 
+
+[![JavaScript](https://img.shields.io/badge/-JavaScript-333333?logo=javascript&logoColor=F7DF1E)](https://www.ecma-international.org/)
+[![nodejs](https://img.shields.io/badge/Node.js-333333?style=plastic&logo=node.js&logoColor=43853D)](https://nodejs.org/en/about/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-ffffff?style=plastic&logo=typescript&logoColor=3178C6)](https://www.typescriptlang.org/)
+[![Babel](https://img.shields.io/badge/Babel-333333?style=plastic&logo=babel&logoColor=F9DC3E)](https://babeljs.io/)
+[![Jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest?style=plastic)
+[![Prettier](https://img.shields.io/badge/Prettier-333333?style=plastic&logo=prettier&logoColor=F7B93E)](https://github.com/prettier/prettier)
+[![Eslint](https://img.shields.io/badge/ESLint-333333?style=plastic&logo=eslint&logoColor=4B32C3)](https://github.com/eslint/eslint) 
 
 ## USAGE
 
@@ -55,4 +54,4 @@ node ./build/src/index.js docs/input/clock.svg
 
 ### Author
 
-- [Twitter](https://twitter.com/onesword0618)
+[![twitter](https://img.shields.io/badge/twitter-ffffff?style=plastic&logo=twitter&logoColor=1DA1F2)](https://twitter.com/onesword0618)
