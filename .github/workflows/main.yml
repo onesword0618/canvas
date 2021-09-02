@@ -16,3 +16,9 @@ jobs:
         run: npm run build
       - name: test
         run: npm run test
+      - uses: testspace-com/setup-testspace@v1
+        with:
+          domain: ${{ github.repository_owner }}
+      - name: Push result to Testspace server
+        run: testspace coverage/clover.xml
+        if: always()
