@@ -20,5 +20,5 @@ jobs:
         with:
           domain: ${{ github.repository_owner }}
       - name: Push result to Testspace server
-        run: testspace results.xml
+        run: testspace coverage/clover.xml
         if: always()
