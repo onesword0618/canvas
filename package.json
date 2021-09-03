@@ -16,7 +16,7 @@
     "typedoc": "typedoc --hideGenerator --out ./docs/api/ ./src/",
     "lint": "eslint --ext .js,.ts src/",
     "format": "prettier --write src/**/*",
-    "test": "jest"
+    "test": "jest --ci --reporters=default --reporters=jest-junit --testResultsProcessor=jest-junit"
   },
   "repository": {
     "type": "git",
@@ -73,5 +73,15 @@
     "*.ts": [
       "npm run lint"
     ]
+  },
+  "jest-junit": {
+    "suiteName": "jest tests",
+    "outputDirectory": ".",
+    "outputName": "junit.xml",
+    "uniqueOutputName": "false",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "ancestorSeparator": " › ",
+    "usePathForSuiteName": "true"
   }
 }

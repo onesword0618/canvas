@@ -5,7 +5,7 @@ module.exports = {
   roots: [
     '<rootDir>/test'
   ],
-  reporters: ["default","jest-junit"],
+  reporters: ["default",["jest-junit", { suiteName: "jest tests" }]],
   testEnvironment: 'jest-environment-node',
   testMatch: [
     '**/__tests__/**/*.[jt]s?(x)',
