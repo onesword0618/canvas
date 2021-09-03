@@ -5,6 +5,7 @@ module.exports = {
   roots: [
     '<rootDir>/test'
   ],
+  reporters: ["default","jest-junit"],
   testEnvironment: 'jest-environment-node',
   testMatch: [
     '**/__tests__/**/*.[jt]s?(x)',
@@ -14,4 +15,5 @@ module.exports = {
     '/node_modules/',
     '\\.pnp\\.[^\\/]+$'
   ],
+  testResultsProcessor: "jest-junit"
 };
