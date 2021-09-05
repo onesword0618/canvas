@@ -14,7 +14,7 @@ Convert SVG Format File to ICO Format File.
 ![GitHub language count](https://img.shields.io/github/languages/count/onesword0618/canvas?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/onesword0618/canvas?style=plastic)
 
-![Testspace tests](https://img.shields.io/testspace/passed/onesword0618/onesword0618:canvas/149329)
+![Testspace tests](https://img.shields.io/testspace/pass-ratio/onesword0618/onesword0618:canvas/main?style=plastic)
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-333333?logo=javascript&logoColor=F7DF1E)](https://www.ecma-international.org/)
 [![Nodejs](https://img.shields.io/badge/Node.js-333333?logo=node.js&logoColor=43853D)](https://nodejs.org/en/about/)
